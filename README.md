@@ -112,4 +112,4 @@ To apply it without reloading:
 
 ## License
 
-[MIT](./LICENS) © franbach
+[MIT](./LICENSE) © franbach
