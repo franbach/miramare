@@ -1,9 +1,22 @@
-## Miramare VIM theme
+<p align="center">
+  <img src="https://raw.githubusercontent.com/franbach/miramare/master/screen/logo.png" alt="Miramar Vim Theme"/>
+</p>
 
-| | |
-|:-------------------------:|:----------------------:|
-| ![Ruby](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_ruby.png) | ![Html](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_html.png) |
-| ![JavaScript](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_js.png) | ![Sass](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_scss.png) |
+> Ruby on Rails
+
+![Ruby](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_ruby.png)
+
+> Html
+
+![Html](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_html.png)
+
+> Javascript
+
+![JavaScript](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_js.png)
+
+> Sass
+
+![Sass](https://raw.githubusercontent.com/franbach/miramare/master/screen/miramare_scss.png)
 
 ## Features
 
@@ -44,8 +57,8 @@ let g:miramare_disable_italic_comment = 1
 
 colorscheme miramare
 ```
-See [Configuration](https://github.com/franbach/miramare#configuration) for more configuration options.
-
+> See [Configuration](https://github.com/franbach/miramare#configuration) for more options.
+>
 If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
 ```vim
 :colorscheme miramare
