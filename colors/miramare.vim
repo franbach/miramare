@@ -512,7 +512,7 @@ highlight! link jsSpreadExpression Purple
 highlight! link jsSpreadOperator Green
 highlight! link jsModuleKeyword Yellow
 highlight! link jsObjectValue Blue
-highlight! link jsTemplateExpression Yellow
+highlight! link jsTemplateExpression LightGray
 highlight! link jsTemplateBraces Yellow
 highlight! link jsClassMethodType Orange
 " }}}
