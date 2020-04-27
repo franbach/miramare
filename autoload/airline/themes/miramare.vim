@@ -34,7 +34,7 @@ let s:normal_mod_fg = s:blue_fg
 let s:normal_mod_bg = s:darker
 
 let s:insert_side_fg = s:dark
-let s:insert_side_bg = s:golden
+let s:insert_side_bg = s:red
 let s:insert_sub_fg = s:white
 let s:insert_sub_bg = s:darkgrey
 let s:insert_mid_fg = s:white
@@ -43,7 +43,7 @@ let s:insert_mod_fg = s:blue_fg
 let s:insert_mod_bg = s:darker
 
 let s:visual_side_fg = s:dark
-let s:visual_side_bg = s:red
+let s:visual_side_bg = s:golden
 let s:visual_sub_fg = s:white
 let s:visual_sub_bg = s:darkgrey
 let s:visual_mid_fg = s:white
