@@ -46,6 +46,7 @@ let s:palette = {
       \ 'purple':     ['#d3a0bc',   '175',  'Magenta'],
       \ 'grey':       ['#444444',   '245',  'LightGrey'],
       \ 'light_grey': ['#5b5b5b',   '245',  'LightGrey'],
+      \ 'gold':       ['#d8caac',   '214',  'Yellow'],
       \ 'none':       ['NONE',      'NONE', 'NONE']
       \ }
 " }}}
@@ -193,8 +194,8 @@ call s:HL('TabLine', s:palette.fg, s:palette.bg4)
 call s:HL('TabLineFill', s:palette.grey, s:palette.bg1)
 call s:HL('TabLineSel', s:palette.bg0, s:palette.green)
 call s:HL('VertSplit', s:palette.bg4, s:palette.none)
-call s:HL('Visual', s:palette.bg0, s:palette.red)
-call s:HL('VisualNOS', s:palette.bg0, s:palette.red, 'underline')
+call s:HL('Visual', s:palette.bg0, s:palette.gold)
+call s:HL('VisualNOS', s:palette.bg0, s:palette.gold, 'underline')
 call s:HL('CursorIM', s:palette.none, s:palette.fg)
 call s:HL('ToolbarLine', s:palette.none, s:palette.grey)
 call s:HL('ToolbarButton', s:palette.fg, s:palette.bg0, 'bold')
