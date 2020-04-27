@@ -45,6 +45,7 @@ let s:palette = {
       \ 'blue':       ['#89beba',   '109',  'Blue'],
       \ 'purple':     ['#d3a0bc',   '175',  'Magenta'],
       \ 'grey':       ['#444444',   '245',  'LightGrey'],
+      \ 'light_grey': ['#5b5b5b',   '245',  'LightGrey'],
       \ 'none':       ['NONE',      'NONE', 'NONE']
       \ }
 " }}}
@@ -192,8 +193,8 @@ call s:HL('TabLine', s:palette.fg, s:palette.bg4)
 call s:HL('TabLineFill', s:palette.grey, s:palette.bg1)
 call s:HL('TabLineSel', s:palette.bg0, s:palette.green)
 call s:HL('VertSplit', s:palette.bg4, s:palette.none)
-call s:HL('Visual', s:palette.none, s:palette.bg3)
-call s:HL('VisualNOS', s:palette.none, s:palette.bg3, 'underline')
+call s:HL('Visual', s:palette.bg0, s:palette.red)
+call s:HL('VisualNOS', s:palette.bg0, s:palette.red, 'underline')
 call s:HL('CursorIM', s:palette.none, s:palette.fg)
 call s:HL('ToolbarLine', s:palette.none, s:palette.grey)
 call s:HL('ToolbarButton', s:palette.fg, s:palette.bg0, 'bold')
@@ -245,12 +246,12 @@ call s:HL('Macro', s:palette.cyan, s:palette.none)
 call s:HL('Identifier', s:palette.blue, s:palette.none)
 call s:HL('SpecialKey', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
-  call s:HL('Comment', s:palette.grey, s:palette.none)
-  call s:HL('SpecialComment', s:palette.grey, s:palette.none)
+  call s:HL('Comment', s:palette.light_grey, s:palette.none)
+  call s:HL('SpecialComment', s:palette.light_grey, s:palette.none)
   call s:HL('Todo', s:palette.purple, s:palette.none)
 else
-  call s:HL('Comment', s:palette.grey, s:palette.none, 'italic')
-  call s:HL('SpecialComment', s:palette.grey, s:palette.none, 'italic')
+  call s:HL('Comment', s:palette.light_grey, s:palette.none, 'italic')
+  call s:HL('SpecialComment', s:palette.light_grey, s:palette.none, 'italic')
   call s:HL('Todo', s:palette.purple, s:palette.none, 'italic')
 endif
 call s:HL('Delimiter', s:palette.fg, s:palette.none)
