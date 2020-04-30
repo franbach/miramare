@@ -1385,6 +1385,10 @@ highlight! link helpSectionDelim Grey
 " }}}
 " }}}
 " Plugins: {{{
+" junegunn/limelight.vim{{{
+let g:limelight_conceal_guifg = s:palette.grey[0]
+let g:limelight_conceal_ctermfg = s:palette.bg4[1]
+" }}}
 " junegunn/vim-plug{{{
 call s:HL('plug1', s:palette.orange, s:palette.none, 'bold')
 call s:HL('plugNumber', s:palette.yellow, s:palette.none, 'bold')
