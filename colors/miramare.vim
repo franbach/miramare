@@ -41,7 +41,7 @@ let s:palette = {
       \ 'orange':     ['#e39b7b',   '208',  'Red'],
       \ 'yellow':     ['#d9bb80',   '214',  'Yellow'],
       \ 'green':      ['#a7c080',   '142',  'Green'],
-      \ 'cyan':       ['#87c095',   '108',   'Cyan'],
+      \ 'cyan':       ['#87c095',   '108',  'Cyan'],
       \ 'blue':       ['#89beba',   '109',  'Blue'],
       \ 'purple':     ['#d3a0bc',   '175',  'Magenta'],
       \ 'grey':       ['#444444',   '245',  'LightGrey'],
