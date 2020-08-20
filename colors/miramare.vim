@@ -19,7 +19,7 @@ let g:colors_name = 'miramare'
 " }}}
 " Configuration: {{{
 let s:configuration = {}
-let s:configuration.palette = get(g:, 'miramare_palette', 'soft')
+let s:configuration.palette = get(g:, 'miramare_palette', {})
 let s:configuration.transparent_background = get(g:, 'miramare_transparent_background', 0)
 let s:configuration.disable_italic_comment = get(g:, 'miramare_disable_italic_comment', 0)
 let s:configuration.enable_italic = get(g:, 'miramare_enable_italic', 0)
@@ -49,6 +49,8 @@ let s:palette = {
       \ 'gold':       ['#d8caac',   '214',  'Yellow'],
       \ 'none':       ['NONE',      'NONE', 'NONE']
       \ }
+
+call extend(s:palette, s:configuration.palette)
 " }}}
 " Function: {{{
 " call s:HL(group, foreground, background)
