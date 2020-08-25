@@ -22,7 +22,9 @@ let s:configuration = {}
 let s:configuration.palette = get(g:, 'miramare_palette', 'soft')
 let s:configuration.transparent_background = get(g:, 'miramare_transparent_background', 0)
 let s:configuration.disable_italic_comment = get(g:, 'miramare_disable_italic_comment', 0)
+let s:configuration.enable_italic_string = get(g:, 'miramare_enable_italic_string', 0)
 let s:configuration.enable_italic = get(g:, 'miramare_enable_italic', 0)
+let s:configuration.enable_bold = get(g:, 'miramare_enable_bold', 1)
 let s:configuration.cursor = get(g:, 'miramare_cursor', 'auto')
 let s:configuration.current_word = get(g:, 'miramare_current_word', get(g:, 'miramare_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
@@ -229,23 +231,36 @@ else
   call s:HL('Exception', s:palette.red, s:palette.none)
   call s:HL('Statement', s:palette.red, s:palette.none)
 endif
+if s:configuration.enable_bold
+  call s:HL('StorageClass', s:palette.orange, s:palette.none, 'bold')
+  call s:HL('Title', s:palette.orange, s:palette.none, 'bold')
+  call s:HL('Type', s:palette.yellow, s:palette.none, 'bold')
+  call s:HL('Function', s:palette.green, s:palette.none, 'bold')
+  call s:HL('Constant', s:palette.cyan, s:palette.none, 'bold')
+else 
+  call s:HL('StorageClass', s:palette.orange, s:palette.none)
+  call s:HL('Title', s:palette.orange, s:palette.none)
+  call s:HL('Type', s:palette.yellow, s:palette.none)
+  call s:HL('Function', s:palette.green, s:palette.none)
+  call s:HL('Constant', s:palette.cyan, s:palette.none)
+  call s:HL('Conditional', s:palette.red, s:palette.none)
+endif
 call s:HL('Error', s:palette.red, s:palette.none)
-call s:HL('StorageClass', s:palette.orange, s:palette.none, 'bold')
 call s:HL('Tag', s:palette.orange, s:palette.none)
 call s:HL('Label', s:palette.orange, s:palette.none)
 call s:HL('Structure', s:palette.orange, s:palette.none)
 call s:HL('Operator', s:palette.orange, s:palette.none)
-call s:HL('Title', s:palette.orange, s:palette.none, 'bold')
 call s:HL('Special', s:palette.yellow, s:palette.none)
 call s:HL('SpecialChar', s:palette.yellow, s:palette.none)
-call s:HL('Type', s:palette.yellow, s:palette.none, 'bold')
-call s:HL('Function', s:palette.green, s:palette.none, 'bold')
-call s:HL('String', s:palette.green, s:palette.none)
 call s:HL('Character', s:palette.green, s:palette.none)
-call s:HL('Constant', s:palette.cyan, s:palette.none, 'bold')
 call s:HL('Macro', s:palette.cyan, s:palette.none)
 call s:HL('Identifier', s:palette.blue, s:palette.none)
 call s:HL('SpecialKey', s:palette.blue, s:palette.none)
+if s:configuration.enable_italic_string
+  call s:HL('String', s:palette.green, s:palette.none, 'italic')
+else
+  call s:HL('String', s:palette.green, s:palette.none)
+endif
 if s:configuration.disable_italic_comment
   call s:HL('Comment', s:palette.light_grey, s:palette.none)
   call s:HL('SpecialComment', s:palette.light_grey, s:palette.none)
