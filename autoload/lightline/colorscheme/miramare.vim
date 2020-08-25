@@ -24,6 +24,9 @@ let s:p.replace.left = [ [ s:dark, s:replace ], [ s:light, s:dark ] ]
 let s:p.normal.middle = [ [ s:dark, s:green ] ]
 let s:p.normal.right = [ [ s:dark, s:light ], [ s:light, s:dark ] ]
 
+let s:p.tabline.left = [ [s:light, s:dark] ]
+let s:p.tabline.tabsel = [ [ s:dark, s:normal, 'bold' ] ]
+
 let s:p.inactive.left =  [ [ s:light, s:grey ], [ s:light, s:grey ] ]
 let s:p.inactive.middle = [ [ s:light, s:grey ] ]
 let s:p.inactive.right = [ [ s:light, s:grey ], [ s:light, s:grey ] ]
