@@ -94,6 +94,8 @@ To apply it without reloading:
 - `g:miramare_current_word`: Some plugins can highlight the word under current cursor(for example [neoclide/coc-highlight](https://github.com/neoclide/coc-highlight)), you can use this option to control their behavior.
   - Available values: `'bold'`, `'underline'`, `'italic'`, `'grey background'`
   - Default value: `'grey background'` when not in transparent mode, `'bold'` when in transparent mode.
+- `g:miramare_palette`: overwrite colors - see `s:palette` in [./colors/miramare.vim](./colors/miramare.vim)
+  - Example (sets a lighter grey): `let g:miramare_palette = {'light_grey': ['#c0c0c0', '245', 'LightGrey']}`
 
 ## FAQ
 
