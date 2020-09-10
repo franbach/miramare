@@ -82,12 +82,18 @@ To apply it without reloading:
 - `g:miramare_transparent_background`: Set to `1` to enable transparent background.
   - Available values: `0`, `1`
   - Default value: `0`
+- `g:miramare_enable_italic_string`: Set to `1` to enable italic in `String` .
+  - Available values: `0`, `1`
+  - Default value: `0`
 - `g:miramare_disable_italic_comment`: Set to `1` to disable italic in `Comment` .
   - Available values: `0`, `1`
   - Default value: `0`
 - `g:miramare_enable_italic`: Set to `1` to italicize keywords. This option is designed to use with fonts that support cursive italic styles, for example [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
   - Available values: `0`, `1`
   - Default value: `0`
+- `g:miramare_enable_bold`: Set to `1` to enable bold in `Type`, `Function`, `Constant` .
+  - Available values: `0`, `1`
+  - Default value: `1`
 - `g:miramare_cursor`: Customize the cursor color, only works in GUI clients.
   - Available values: `'auto'`, `'red'`, `'green'`, `'blue'`, `'purple'`
   - Default value: `'auto'`
