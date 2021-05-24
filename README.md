@@ -35,6 +35,23 @@ Plug 'franbach/miramare'
 ```
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
 
+### Vim 8 packages
+
+Add `packloadall` to your `.vimrc` (if you haven't already):
+
+`.vimrc`:
+
+```vim
+packloadall
+```
+
+Clone `miramare` into your `./vim/pack/plugins/start` directory:
+
+```bash
+mkdir -p ~/.vim/pack/plugins/start
+git clone https://github.com/franbach/miramare.git ~/.vim/pack/plugins/start/miramare
+```
+
 ### Manually
 
 1. Clone this repository.
