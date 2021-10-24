@@ -31,4 +31,8 @@ let s:p.inactive.left =  [ [ s:light, s:grey ], [ s:light, s:grey ] ]
 let s:p.inactive.middle = [ [ s:light, s:grey ] ]
 let s:p.inactive.right = [ [ s:light, s:grey ], [ s:light, s:grey ] ]
 
+let s:p.normal.error = [ [ s:dark, s:normal ] ]
+let s:p.normal.warning = [ [ s:dark, s:light ] ]
+
+
 let g:lightline#colorscheme#miramare#palette = lightline#colorscheme#flatten(s:p)
